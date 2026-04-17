@@ -1,0 +1,11 @@
+openai==1.65.1
+opik==1.7.8
+httpx==0.27.0
+pydantic==2.7.4
+pydantic-settings==2.7.0
+pandas==2.2.3
+lmdeploy==0.7.1
+uvicorn==0.15.0
+fastapi
+python-multipart
+
