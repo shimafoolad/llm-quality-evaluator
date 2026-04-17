@@ -1,0 +1,55 @@
+{
+    "chat_history": [
+        {
+            "content": "Hello, how are you?",
+            "conversation_id": "sample_conv_1",
+            "created_at": "2024-01-01T10:00:00.000Z",
+            "message_id": "msg_1",
+            "metadata": "{}",
+            "sender_id": "user_123",
+            "sender_type": "R",
+            "state": "received"
+        },
+        {
+            "content": "I'm doing well, thanks! How about you?",
+            "conversation_id": "sample_conv_1",
+            "created_at": "2024-01-01T10:01:00.000Z",
+            "message_id": "msg_2",
+            "metadata": "{}",
+            "sender_id": "bot_456",
+            "sender_type": "V",
+            "state": "received"
+        }
+    ],
+    "chat_summary": {
+        "conversation_id": "sample_conv_1",
+        "is_premium": false,
+        "location": "Sample City, US",
+        "location_geo": {
+            "lat": 40.7128,
+            "lng": -74.0060
+        },
+        "summary": "A simple greeting conversation between two users."
+    },
+    "participants_info": [
+        {
+            "conversations_list": null,
+            "given_name": "John",
+            "img_profile_keywords": null,
+            "location": "Sample City, US",
+            "personality": "friendly",
+            "profession": "engineer",
+            "profile_images": null,
+            "user_id": "user_123",
+            "user_type": "R",
+            "local_hour": "10:00"
+        },
+        {
+            "given_name": "Jane",
+            "location": "Sample City, US",
+            "profession": "assistant",
+            "user_id": "bot_456",
+            "user_type": "V"
+        }
+    ]
+}

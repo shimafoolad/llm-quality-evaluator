@@ -1,0 +1,3 @@
+input,conversation_id,output_v1,output_20250407,request_data,prompt_v1,response_time_20250407 (sec),prompt_20250407,timestamp,id
+"How was your day?","sample_conv_6","It was productive, thanks!","Quite relaxing, actually.","{""chat_history"": [""day inquiry""], ""summary"": ""Daily update""}","Respond to how was your day","1.0","Generate day description","2024-01-06T09:00:00.000Z","id_006"
+"What do you do for fun?","sample_conv_7","I play guitar and read.","I enjoy painting and hiking.","{""chat_history"": [""fun activities""], ""summary"": ""Hobbies discussion""}","Describe fun activities","1.7","List leisure activities","2024-01-07T15:00:00.000Z","id_007"

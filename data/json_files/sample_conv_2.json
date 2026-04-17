@@ -1,0 +1,59 @@
+{
+    "chat_history": [
+        {
+            "content": "What's your favorite hobby?",
+            "conversation_id": "sample_conv_2",
+            "created_at": "2024-01-02T14:00:00.000Z",
+            "message_id": "msg_3",
+            "metadata": "{}",
+            "sender_id": "user_789",
+            "sender_type": "R",
+            "state": "received"
+        },
+        {
+            "content": "I enjoy reading books and hiking in nature.",
+            "conversation_id": "sample_conv_2",
+            "created_at": "2024-01-02T14:02:00.000Z",
+            "message_id": "msg_4",
+            "metadata": "{}",
+            "sender_id": "bot_101",
+            "sender_type": "V",
+            "state": "received"
+        },
+        {
+            "content": "That sounds fun! I like cooking and photography.",
+            "conversation_id": "sample_conv_2",
+            "created_at": "2024-01-02T14:03:00.000Z",
+            "message_id": "msg_5",
+            "metadata": "{}",
+            "sender_id": "user_789",
+            "sender_type": "R",
+            "state": "received"
+        }
+    ],
+    "chat_summary": {
+        "is_premium": false,
+        "location": "Another City, CA",
+        "location_geo": {
+            "lat": 34.0522,
+            "lng": -118.2437
+        },
+        "summary": "A conversation about hobbies and interests.",
+    },
+    "participants_info": [
+        {
+            "given_name": "Mike",
+            "location": "Another City, CA",
+            "profession": "teacher",
+            "user_id": "user_789",
+            "user_type": "R"
+        },
+        {
+            "given_name": "Lisa",
+            "location": "Another City, CA",
+            "profession": "designer",
+            "user_id": "bot_101",
+            "user_type": "V"
+        }
+    ]
+}

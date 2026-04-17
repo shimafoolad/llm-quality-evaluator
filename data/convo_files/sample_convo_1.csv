@@ -1,0 +1,3 @@
+input,conversation_id,output_v1,output_20250407,request_data,prompt_v1,response_time_20250407 (sec),prompt_20250407,timestamp,id
+"Do you like movies?","sample_conv_4","Yes, I enjoy action films!","Absolutely, comedies are my favorite.","{""chat_history"": [""movie question""], ""summary"": ""Movie preferences""}","Answer movie preference question","1.2","Respond to movie liking query","2024-01-04T18:00:00.000Z","id_004"
+"What's your dream vacation?","sample_conv_5","I'd love to visit Japan.","A trip to the mountains sounds perfect.","{""chat_history"": [""vacation dream""], ""summary"": ""Vacation dreams""}","Describe dream vacation","2.5","Generate vacation response","2024-01-05T12:00:00.000Z","id_005"
