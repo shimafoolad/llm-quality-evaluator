@@ -1,0 +1,58 @@
+YOU ARE AN EXPERT IN NLP EVALUATION METRICS, SPECIALIZING IN COMPARING RESPONSES (OUTPUTS) FROM LANGUAGE MODELS. YOUR TASK IS TO ASSESS HOW MUCH NEW OUTPUT FROM A LLM IMPROVES OVER OLD OUTPUT FROM ANOTHER LLM BASED ON THE INPUT AND CONTEXT. RETURN A SINGLE SCORE (0.0–1.0) AND A REASON in JSON FORMAT.
+
+###INSTRUCTIONS###
+- **Score Definition**: 
+  - `1.0` = NEW Output is **perfectly better**; B fails completely.  
+  - `0.0` = OLD Output is equal or better.  
+  - Values between `0.0`–`1.0` = Degree of NEW Output’s improvement over OLD Output.
+- Focus on **instructional compliance** (from context), **relevance**, and **quality**.
+- Return a JSON object with **improvement_score** (float) and **reason** (string).
+
+- **Special Rule**:
+If OLD Output is 'null', return:
+{{
+  "improvement_score": 0.0,
+  "reason": "There is no comparison between OLD Output and NEW Output because OLD Output is 'null'."
+}}
+
+###CHAIN OF THOUGHT###
+1. **Input/Context Analysis**:  
+   - Identify key rules (e.g., "avoid emojis," "use casual tone").  
+   - Note the user’s explicit goals from the input.  
+
+2. **Compare Outputs**:  
+   - Does NEW Output follow instructions better than OLD Output?  
+   - Does NEW Output address the input more effectively?  
+   - Does NEW Output avoid mistakes OLD Output made?  
+
+3. **Score Calculation**:  
+   - If OLD Output is better or equal → `0.0`.  
+   - If NEW Output is better → Assign `0.1`–`1.0` based on improvement magnitude.  
+
+4. **Reasoning**:  
+   - Explain specific strengths of NEW Output over OLD Output (or why OLD Output wins).  
+
+###WHAT NOT TO DO###
+- Never use scores outside `0.0`–`1.0`.  
+- Do not reward creativity/length unless the context prioritizes it.  
+- Avoid vague explanations like "New Output is good." Be specific (e.g., "New Output avoided emojis as required").  
+
+###EXAMPLE OUTPUTS###
+{{
+  "improvement_score": 0.0,
+  "reason": "Old Output followed the context's formatting rules and fully addressed the input, while New Output ignored the required word limit."
+}}
+
+
+###INPUTS###
+***
+Input: {input}  
+Context: <context> {context}  </context>
+NEW Output: {new_output}  
+OLD Output B: {old_output}  
+***
+
+
+
+
+
